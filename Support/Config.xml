@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Config>
+  <Font Name = "Consolas" Size = "11" />
+  <Styles>
+  <Style Name = "深色" BackColor = "0x303030" ForeColor = "White" BackColor2 = "LightGray" HighLight = "Yellow">
+    <Identifier ForeColor = "0xBDFFFF" />
+    <CommentLine ForeColor = "LimeGreen" />
+    <CommentBlock ForeColor = "LimeGreen" />
+    <Number ForeColor = "HotPink" />
+    <String ForeColor = "LightSalmon" />
+    <StringEol ForeColor = "LightSalmon" />
+    <Character ForeColor = "LightSalmon" />
+    <Operator ForeColor = "0xFFFF99" />
+    <DefName ForeColor = "MediumTurquoise" />
+    <ClassName ForeColor = "MediumTurquoise" />
+    <Decorator ForeColor = "0xFFFF99" />
+    <Triple ForeColor = "LimeGreen" />
+    <TripleDouble ForeColor = "LimeGreen" />
+    <Word ForeColor = "DeepSkyBlue" />
+    <Word2 ForeColor = "MediumTurquoise" />
+  </Style>
+  </Styles>
+  <Templates>
+    <Module Name = "模块" />
+    <Module Name = "类模块">
+class {0}:
+    def __init__(self):
+        pass
+    </Module>
+    <Module Name = "窗体">
+clr.AddReference(&apos;System.Windows.Forms&apos;)
+clr.AddReference(&apos;System.Drawing&apos;)
+clr.AddReference(&apos;System&apos;)
+from System.Windows.Forms import *
+from System.Drawing import *
+class {0}(Form):
+    def __init__(self):
+        pass
+    </Module>
+    <Module Name = "Wpf窗体">
+clr.AddReference(&apos;System.Windows.Forms&apos;)
+clr.AddReference(&apos;System.Drawing&apos;)
+clr.AddReference(&apos;System&apos;)
+clr.AddReference(&apos;IronPython.Wpf&apos;)
+clr.AddReference(&apos;PresentationFramework&apos;)
+clr.AddReference(&apos;PresentationCore&apos;)
+from System.Windows.Forms import Form, DockStyle
+from System.Windows.Forms.Integration import ElementHost
+from System.Drawing import Point
+from System.Windows.Controls import UserControl
+import wpf
+
+class {0}(Form):
+    def __init__(self): 
+        self.elementHost = ElementHost()
+        self.elementHost.Child = Control1()
+        self.elementHost.Location = Point(0, 0)
+        self.elementHost.Dock = DockStyle.Fill
+        self.Controls.Add(self.elementHost)
+
+class Control1(UserControl):
+    def __init__(self):
+        file = pye.findfile(__name__, '{0}.xaml')
+        wpf.LoadComponent(self, file)
+    </Module>
+  </Templates>
+</Config>
