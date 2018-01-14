@@ -1,0 +1,16 @@
+D:\NFox\NFox.Pycad.dll
+D:\NFox\NFox.Pycad.pdb
+E:\NFox\NFox.Python\obj\Debug\NFox.Pycad.frmPyIde.resources
+E:\NFox\NFox.Python\obj\Debug\NFox.Pycad.csproj.GenerateResource.Cache
+E:\NFox\NFox.Python\obj\Debug\NFox.Pycad.dll
+E:\NFox\NFox.Python\obj\Debug\NFox.Pycad.pdb
+F:\NFox\NFox.Python\obj\Debug\NFox.Pycad.csproj.GenerateResource.Cache
+F:\NFox\NFox.Python\obj\Debug\NFox.Pycad.dll
+F:\NFox\NFox.Python\obj\Debug\NFox.Pycad.pdb
+F:\NFox\NFox.Python\obj\Debug\NFox.Pycad.PyIdeForm.resources
+D:\NFox\Src\obj\Debug\NFox.Pycad.ConfigForm.resources
+D:\NFox\Src\obj\Debug\NFox.Pycad.Properties.Resources.resources
+D:\NFox\Src\obj\Debug\NFox.Pycad.PyIdeForm.resources
+D:\NFox\Src\obj\Debug\NFox.Pycad.csproj.GenerateResource.Cache
+D:\NFox\Src\obj\Debug\NFox.Pycad.dll
+D:\NFox\Src\obj\Debug\NFox.Pycad.pdb

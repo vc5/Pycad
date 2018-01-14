@@ -1,0 +1,7 @@
+D:\NFox\NFox.Python.dll.config
+D:\NFox\NFox.Python.dll
+D:\NFox\NFox.Python.pdb
+E:\NFox\NFox.Python\obj\Debug\NFox.Python.dll
+E:\NFox\NFox.Python\obj\Debug\NFox.Python.pdb
+E:\NFox\NFox.Python\obj\Debug\NFox.Python.csproj.GenerateResource.Cache
+E:\NFox\NFox.Python\obj\Debug\NFox.Pycad.frmPyIde.resources
