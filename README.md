@@ -1,12 +1,13 @@
 # Pycad
 PyIDE For AutoCad2014 - 2016
 
-1、打开AutoCad，用netload命令加载NFox.Python.dll
+1、打开AutoCad，用`netload`命令加载NFox.Python.dll
 
-2、加载成功后，在命令行键入pye命令可打开编辑器
+2、加载成功后，在命令行键入`pye`命令可打开编辑器
 
 3、pytest项目有创建命令、lisp函数、面板的例程
 
+```python
 from pycad.runtime import *
 
 @command(flags = acrx.CommandFlags.Redraw)  
@@ -41,6 +42,7 @@ class myshowpanel(object):
         ps.Add("P1", TPanel())  
     def show(self, ps):  
         #self.dock = acws.DockSides.None  
-        pass          
+        pass
+```
 
 ![Image text](https://github.com/xsfhlzh/Pycad/blob/master/Src/0.png)
